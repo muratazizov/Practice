@@ -1,0 +1,38 @@
+git config	user.name  											#display name
+			user.email											#display email
+			
+git config	--global user.name 'Murat Azizov'					#set username
+			--global user.email 'top.m.files@outlook.com'		#set email
+
+clear															#clears display
+
+git init														#initialization
+git status														#status info
+git config --global --add safe.directory E:/GIT/Practice		#setting Master directory
+
+touch file_name.ext												#creates file with extension
+rm file_name.ext												#removes file
+
+git add filename.ext											#add to stage
+git add .														#add all files in current dir to stage
+
+git commit filename.ext -m "comment"							#commits file with comment
+git commit -m "Comment"											#commits all files in stage
+
+git log															#show the log/history
+
+git checkout filename.ext										#cancells last changes (ctrl+z)
+git checkout fdf47650a361abe8be41c71fba4ba49c3a101d5e			#jumps to commit version
+git checkout master												#jumps to the last working version
+
+git reset filename.ext											#drop from stage
+git reset .														#drop all from stage
+
+git branch 														#displays current branches
+git branch branch_name											#creates a new branch_name
+git checkout branch_name										#jumps to branch_name branch.
+git merge branch_name											#merges current branch to branch_name
+
+git branch -M main												#Renames the master branch to Main
+git remote add origin ___URL_LINK_ADDRESS___					#Adding remote GitHub repository
+git push -u origin main(it can be master)						#tracking Master origin
